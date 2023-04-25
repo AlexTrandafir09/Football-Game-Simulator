@@ -236,9 +236,11 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
     cout << "1) 4-3-3\n";
     cout << "2) 4-4-2\n";
     cout << "Choose a formation: ";cin >> formation_pick;
-    cout << "Enter the number associated for each of the players you'd like to pick.\n";
+
     switch (formation_pick) {
+
         case 1: {
+            cout << "Enter the number associated for each of the players you'd like to pick.\n";
             for (short i = 0; i < 11; i++) {
                 if (i == 0) {
                     short pick;
@@ -247,7 +249,7 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(GK_players);
                     cout << " Pick the GK for your team: ";
                     cin >> pick;
-                    if (pick>GK_players.size())
+                    if (pick > GK_players.size())
                         throw PickException();
                     player_team.push_back(GK_players[pick - 1]);
                     GK_players[pick - 1]->lets_play_message();
@@ -259,7 +261,7 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(RB_players);
                     cout << " Pick the RB for your team: ";
                     cin >> pick;
-                    if (pick>RB_players.size())
+                    if (pick > RB_players.size())
                         throw PickException();
                     player_team.push_back(RB_players[pick - 1]);
                     RB_players[pick - 1]->lets_play_message();
@@ -271,7 +273,7 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(CB_players);
                     cout << " Pick the first CB for your team: ";
                     cin >> pick;
-                    if (pick>CB_players.size())
+                    if (pick > CB_players.size())
                         throw PickException();
                     player_team.push_back(CB_players[pick - 1]);
                     CB_players[pick - 1]->lets_play_message();
@@ -283,7 +285,7 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(CB_players);
                     cout << " Pick the second CB for your team: ";
                     cin >> pick;
-                    if (pick>CB_players.size())
+                    if (pick > CB_players.size())
                         throw PickException();
                     player_team.push_back(CB_players[pick - 1]);
                     CB_players[pick - 1]->lets_play_message();
@@ -295,7 +297,7 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(LB_players);
                     cout << " Pick the LB for your team: ";
                     cin >> pick;
-                    if (pick>LB_players.size())
+                    if (pick > LB_players.size())
                         throw PickException();
                     player_team.push_back(LB_players[pick - 1]);
                     LB_players[pick - 1]->lets_play_message();
@@ -307,7 +309,7 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(CM_players);
                     cout << " Pick the first CM for your team: ";
                     cin >> pick;
-                    if (pick>CM_players.size())
+                    if (pick > CM_players.size())
                         throw PickException();
                     player_team.push_back(CM_players[pick - 1]);
                     CM_players[pick - 1]->lets_play_message();
@@ -319,7 +321,7 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(CM_players);
                     cout << " Pick the second CM for your team: ";
                     cin >> pick;
-                    if (pick>CM_players.size())
+                    if (pick > CM_players.size())
                         throw PickException();
                     player_team.push_back(CM_players[pick - 1]);
                     CM_players[pick - 1]->lets_play_message();
@@ -332,7 +334,7 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(CM_players);
                     cout << " Pick the third CM for your team: ";
                     cin >> pick;
-                    if (pick>CM_players.size())
+                    if (pick > CM_players.size())
                         throw PickException();
                     player_team.push_back(CM_players[pick - 1]);
                     CM_players[pick - 1]->lets_play_message();
@@ -344,7 +346,7 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(RW_players);
                     cout << " Pick the RW for your team: ";
                     cin >> pick;
-                    if (pick>RW_players.size())
+                    if (pick > RW_players.size())
                         throw PickException();
                     player_team.push_back(RW_players[pick - 1]);
                     RW_players[pick - 1]->lets_play_message();
@@ -356,7 +358,7 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(ST_players);
                     cout << " Pick the ST for your team: ";
                     cin >> pick;
-                    if (pick>ST_players.size())
+                    if (pick > ST_players.size())
                         throw PickException();
                     player_team.push_back(ST_players[pick - 1]);
                     ST_players[pick - 1]->lets_play_message();
@@ -367,9 +369,9 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                                                                                                            "LW");
                     read_write_data::printAllPlayers(LW_players);
                     cout << " Pick the LW for your team: ";
-                    if (pick>LW_players.size())
-                        throw PickException();
                     cin >> pick;
+                    if (pick > LW_players.size())
+                        throw PickException();
                     player_team.push_back(LW_players[pick - 1]);
                     LW_players[pick - 1]->lets_play_message();
                 }
@@ -377,6 +379,7 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
             break;
         }
         case 2: {
+            cout << "Enter the number associated for each of the players you'd like to pick.\n";
             for (short i = 0; i < 11; i++) {
                 if (i == 0) {
                     short pick;
@@ -386,10 +389,10 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(GK_players);
                     cout << " Pick the GK for your team: ";
                     cin >> pick;
-                    if (pick>GK_players.size())
+                    if (pick > GK_players.size())
                         throw PickException();
                     player_team.push_back(GK_players[pick - 1]);
-                    GK_players[pick-1]->lets_play_message();
+                    GK_players[pick - 1]->lets_play_message();
                 }
                 if (i == 1) {
                     short pick;
@@ -399,7 +402,7 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(RB_players);
                     cout << " Pick the RB for your team: ";
                     cin >> pick;
-                    if (pick>RB_players.size())
+                    if (pick > RB_players.size())
                         throw PickException();
                     player_team.push_back(RB_players[pick - 1]);
                     RB_players[pick - 1]->lets_play_message();
@@ -412,7 +415,7 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(CB_players);
                     cout << " Pick the first CB for your team: ";
                     cin >> pick;
-                    if (pick>CB_players.size())
+                    if (pick > CB_players.size())
                         throw PickException();
                     player_team.push_back(CB_players[pick - 1]);
                     CB_players[pick - 1]->lets_play_message();
@@ -425,7 +428,7 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(CB_players);
                     cout << " Pick the second CB for your team: ";
                     cin >> pick;
-                    if (pick>CB_players.size())
+                    if (pick > CB_players.size())
                         throw PickException();
                     player_team.push_back(CB_players[pick - 1]);
                     CB_players[pick - 1]->lets_play_message();
@@ -438,7 +441,7 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(LB_players);
                     cout << " Pick the LB for your team: ";
                     cin >> pick;
-                    if (pick>LB_players.size())
+                    if (pick > LB_players.size())
                         throw PickException();
                     player_team.push_back(LB_players[pick - 1]);
                     LB_players[pick - 1]->lets_play_message();
@@ -451,10 +454,10 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(RM_players);
                     cout << " Pick the RM for your team: ";
                     cin >> pick;
-                    if (pick>RM_players.size())
+                    if (pick > RM_players.size())
                         throw PickException();
                     player_team.push_back(RM_players[pick - 1]);
-                    RM_players[pick-1]->lets_play_message();
+                    RM_players[pick - 1]->lets_play_message();
                 }
                 if (i == 6) {
                     short pick;
@@ -464,10 +467,10 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(CM_players);
                     cout << " Pick the first CM for your team: ";
                     cin >> pick;
-                    if (pick>CM_players.size())
+                    if (pick > CM_players.size())
                         throw PickException();
                     player_team.push_back(CM_players[pick - 1]);
-                    CM_players[pick-1]->lets_play_message();
+                    CM_players[pick - 1]->lets_play_message();
                 }
 
                 if (i == 7) {
@@ -478,10 +481,10 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(CM_players);
                     cout << " Pick the second CM for your team: ";
                     cin >> pick;
-                    if (pick>CM_players.size())
+                    if (pick > CM_players.size())
                         throw PickException();
                     player_team.push_back(CM_players[pick - 1]);
-                    CM_players[pick-1]->lets_play_message();
+                    CM_players[pick - 1]->lets_play_message();
                 }
                 if (i == 8) {
                     short pick;
@@ -491,10 +494,10 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(LM_players);
                     cout << " Pick the LM for your team: ";
                     cin >> pick;
-                    if (pick>LM_players.size())
+                    if (pick > LM_players.size())
                         throw PickException();
                     player_team.push_back(LM_players[pick - 1]);
-                    LM_players[pick-1]->lets_play_message();
+                    LM_players[pick - 1]->lets_play_message();
                 }
                 if (i == 9) {
                     short pick;
@@ -504,10 +507,10 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(ST_players);
                     cout << " Pick the first ST for your team: ";
                     cin >> pick;
-                    if (pick>ST_players.size())
+                    if (pick > ST_players.size())
                         throw PickException();
                     player_team.push_back(ST_players[pick - 1]);
-                    ST_players[pick-1]->lets_play_message();
+                    ST_players[pick - 1]->lets_play_message();
                 }
                 if (i == 10) {
                     short pick;
@@ -517,15 +520,18 @@ vector<shared_ptr<player>> read_write_data::readGamersTeam() {
                     read_write_data::printAllPlayers(ST_players);
                     cout << " Pick the first ST for your team: ";
                     cin >> pick;
-                    if (pick>ST_players.size())
+                    if (pick > ST_players.size())
                         throw PickException();
                     player_team.push_back(ST_players[pick - 1]);
-                    ST_players[pick-1]->lets_play_message();
+                    ST_players[pick - 1]->lets_play_message();
                 }
             }
             break;
         }
-
+        default:{
+            cout<<"There isn't any formation associated with the number you introduced.";
+            exit(1);
+        }
 
     }
     return player_team;
