@@ -1,0 +1,21 @@
+# ninja log v5
+0	659	7041165362619937	CMakeFiles/tema2_poo.dir/attacker.cpp.obj	620f0ca01969f43f
+14	675	7041165362874242	CMakeFiles/tema2_poo.dir/defender.cpp.obj	49a55770c98f96cc
+8	697	7041165363115704	CMakeFiles/tema2_poo.dir/midfielder.cpp.obj	feeaa6721729d5aa
+11	706	7041165363145706	CMakeFiles/tema2_poo.dir/player.cpp.obj	e37f2966283accaf
+18	715	7041165363275704	CMakeFiles/tema2_poo.dir/GK.cpp.obj	552b6cd91f77998c
+22	722	7041165363295713	CMakeFiles/tema2_poo.dir/LB.cpp.obj	9c08ab62d1b4c430
+28	731	7041165363436671	CMakeFiles/tema2_poo.dir/CB.cpp.obj	2b4df9f5de149ce8
+42	731	7041165363416669	CMakeFiles/tema2_poo.dir/RW.cpp.obj	d86b57987c7fa73d
+706	1143	7041165367696029	CMakeFiles/tema2_poo.dir/ST.cpp.obj	5ccd57ad4c747967
+48	735	7041165363561760	CMakeFiles/tema2_poo.dir/RM.cpp.obj	c9cbcd77db692ed2
+33	744	7041165363641770	CMakeFiles/tema2_poo.dir/CM.cpp.obj	875824e065d5a2be
+38	744	7041165363651767	CMakeFiles/tema2_poo.dir/LM.cpp.obj	50604954d1a2d9a0
+4	794	7041165364188452	CMakeFiles/tema2_poo.dir/main.cpp.obj	7cc9583d1cf3f036
+697	807	7041165364331843	CMakeFiles/tema2_poo.dir/JerseyNumberException.cpp.obj	fb672f2e962dbb54
+662	1128	7041165367542074	CMakeFiles/tema2_poo.dir/RB.cpp.obj	2269993b55dc01a0
+676	1130	7041165367562532	CMakeFiles/tema2_poo.dir/LW.cpp.obj	9b22c86201df98dd
+723	1599	7041165372226585	CMakeFiles/tema2_poo.dir/game.cpp.obj	71993f2aa8ce2d74
+715	1689	7041165373128314	CMakeFiles/tema2_poo.dir/read_write_data.cpp.obj	4f58f67442183a3c
+2	156	7041165786866792	CMakeFiles/tema2_poo.dir/PickException.cpp.obj	fdb209f6abcd0c0f
+157	416	7041165789415003	tema2_poo.exe	b6b29827d4b9f1c
